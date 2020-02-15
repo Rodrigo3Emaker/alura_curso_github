@@ -1,0 +1,109 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="utf-8">
+      <title>Git Github</title>
+      <link rel="icon" href="logod.png">
+      <style media="screen">
+      body{
+        font-family: verdana, sans-serif;
+        font-size: 11pt;
+        background-color: #E0ECF8;
+
+      }
+      h1 {
+        color: #fff;
+        background-color: #848484;
+        text-align: center;
+      }
+        div.main_page{
+          position: relative;
+          display: table;
+          width: 800px;
+          margin-bottom: 3px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 10px 10px 10px 10px;
+          background-color: #f0f0f0;
+          border-width: 2px;
+          border-color: #000;
+          border-style: solid;
+          box-sizing: border-box;
+          }
+          ol {
+            list-style-type:disc;
+          }
+        strong {
+          background-color: yellow;
+        }
+        hr {
+height: 1px;
+
+        }
+        h2 {
+          text-align: center;
+          color: #a89f35;
+          background-color: #5f1f50;
+
+        }
+      </style>
+    </head>
+    <body>
+      <div class="main_page">
+        <h1>Git Github</h1>
+      <p>Lista de comandos adquiridas no curso
+        <a href="https://cursos.alura.com.br/course/git-github-controle-de-versao">
+           “Git e Github: Controlo e compartilhe seu código”</a>.
+        Este curso faz parte da Formação
+         <a href="https://cursos.alura.com.br/formacao-devops">“DevOps”</a>,
+          ministrado pela <a href="http://alura.com.br">alura</a>.</p>
+          <ol>
+              <li><strong>git init</strong> -inicia o git dentro do repositório atual</li>
+              <li><strong>git status</strong> -informa qual é o status atual dos arquivos.</li>
+              <li><strong>git add .</strong> -seleciona todos arquivos dentro do diretório (que serão commitados)</li>
+              <li><strong>git commit -m "mensagem"</strong> -Faz um commit do diretório, ( -m serve para deixar uma mensagem).</li>
+              <li><strong>git log</strong> -mostra informações sobre os commits</li>
+              <li><strong>git config --local</strong> -configura parametros para cada projeto</li>
+              <li><strong> git config --global</strong> -configura parametros para todos projetos no pc</li>
+              <li><strong>git config --local user.name</strong> -configura o nome do autor</li>
+              <li><strong>git log --oneline</strong> -resume as informações de log em uma linha.</li>
+              <li><strong>git log -p</strong> -informações de mudanças que foram realizadas</li>
+              <li><strong>https://devhints.io/git-log</strong> -site com diversos comandos de log </li>
+              <li><strong>git init --bare</strong> -inicia um repositório puro, ou seja, contém somente as alterações</li>
+              <li><strong>git remote add localDiretório caminhoDiretório</strong> -Adiciona um repositório onde, localDiretório
+              se refere ao nome do diretório, e caminhoDiretório é onde está esse diretório.</li>
+              <li><strong>git remote</strong> -retorna o nome do diretório</li>
+              <li><strong>git remote -v</strong> -retorna o endereço do repositório</li>
+              <li><strong>git clone caminhoDiretório projeto</strong> - clona o conteúdo do repositório que está em
+                caminhoDiretório, e salva em um novo diretório chamado projeto</li>
+              <li><strong>git push localDiretório master</strong> - envia o diretório localDiretório / antes deste comamdo
+              é necessário utlizar o comando</li>: <strong>git remote</strong>
+              <li><strong>git pull localDiretório master</strong></li>-puxa o diretório com o nome localDiretório para o branch
+              master / pode ser necessário alterara o nome do repositório, para isso basta usar o
+              comando: git remote rename origin localDiretório.
+              <li><strong>git remote rename origin localDiretório</strong> - altera o nome do diretório, de origin para localDiretório</li>
+              <li><strong></strong></li>
+              <li><strong></strong></li>
+              <li><strong></strong></li>
+              <li><strong></strong></li>
+
+          </ol>
+
+          <h2>Observações</h2>
+
+          <p>  Para "commitar" é preciso realizar os seguintes passos:<br>
+          Depois de realizar as alterações desejadas, entrar com os comandos:
+          </p>
+          <ol>
+            <li><strong>git add nomeDoArquivo</strong></li>
+            <li><strong>git commit -m "descriçãoDaAlteração"</strong></li>
+            <li><strong>git push localDiretório master</strong></li>
+          </ol>
+          <hr>
+          <p>Para baixar as alterações feitas:</p>
+          <ol>
+            <li><strong>git pull nomeDoDiretório master</strong></li>
+          </ol>
+      </div>
+    </body>
+  </html>
